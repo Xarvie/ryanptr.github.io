@@ -1,0 +1,615 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next mist">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="VSCode," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="安装VSCode官方链接:(https://code.visualstudio.com/Download)
+安装VSC扩展 cpptools进入VSCode界面后按（⌘+P），粘贴如下并确定  ext install cpptools
+安装GDB官方英文指南，翻译在下方：
+
+
+Install homebrew by executing the following in Terminal:/usr/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOSX安装VSCode">
+<meta property="og:url" content="http://yoursite.com/2016/07/22/VSCodeForOSX/index.html">
+<meta property="og:site_name" content="Bonjour,Coder">
+<meta property="og:description" content="安装VSCode官方链接:(https://code.visualstudio.com/Download)
+安装VSC扩展 cpptools进入VSCode界面后按（⌘+P），粘贴如下并确定  ext install cpptools
+安装GDB官方英文指南，翻译在下方：
+
+
+Install homebrew by executing the following in Terminal:/usr/">
+<meta property="og:updated_time" content="2016-10-30T06:01:42.288Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MacOSX安装VSCode">
+<meta name="twitter:description" content="安装VSCode官方链接:(https://code.visualstudio.com/Download)
+安装VSC扩展 cpptools进入VSCode界面后按（⌘+P），粘贴如下并确定  ext install cpptools
+安装GDB官方英文指南，翻译在下方：
+
+
+Install homebrew by executing the following in Terminal:/usr/">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: false,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/22/VSCodeForOSX/"/>
+
+  <title> MacOSX安装VSCode | Bonjour,Coder </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Bonjour,Coder</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                MacOSX安装VSCode
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-07-22T14:05:51+08:00" content="2016-07-22">
+              2016-07-22
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="安装VSCode"><a href="#安装VSCode" class="headerlink" title="安装VSCode"></a>安装VSCode</h2><p>官方链接:(<a href="https://code.visualstudio.com/Download" target="_blank" rel="external">https://code.visualstudio.com/Download</a>)</p>
+<h2 id="安装VSC扩展-cpptools"><a href="#安装VSC扩展-cpptools" class="headerlink" title="安装VSC扩展 cpptools"></a>安装VSC扩展 cpptools</h2><p>进入VSCode界面后按（⌘+P），粘贴如下并确定  ext install cpptools</p>
+<h2 id="安装GDB"><a href="#安装GDB" class="headerlink" title="安装GDB"></a>安装GDB</h2><p>官方英文指南，翻译在下方：</p>
+<blockquote>
+<ol>
+<li>Install homebrew by executing the following in Terminal:<br><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></li>
+<li>Install GDB by executing the following in Terminal. Note that the path to GDB will be /usr/local/bin/gdb:<br><code>brew tap homebrew/dupes</code><br><code>brew install gdb</code></li>
+<li>Sign the GDB binary as described here.<h3 id="安装xcode"><a href="#安装xcode" class="headerlink" title="安装xcode"></a>安装xcode</h3>下载xcode<br>安装xcode<br>运行xcode，同意协议<br>退出xcode</li>
+</ol>
+</blockquote>
+<h3 id="开启vpn"><a href="#开启vpn" class="headerlink" title="开启vpn"></a>开启vpn</h3><p>网络设置添加vpn</p>
+<h3 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h3><p><code>sudo /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code><br>安装完homebrew关闭vpn</p>
+<h3 id="更换homebrew源"><a href="#更换homebrew源" class="headerlink" title="更换homebrew源"></a>更换homebrew源</h3><p><code>sudo cd /usr/local &amp;&amp; git remote set-url origin https://git.coding.net/homebrew/homebrew.git</code><br><code>cd $home &amp;&amp; brew update</code></p>
+<h3 id="安装GDB-1"><a href="#安装GDB-1" class="headerlink" title="安装GDB"></a>安装GDB</h3><p><code>brew tap homebrew/dupes</code><br><code>brew install gdb</code></p>
+<h3 id="GDB签名"><a href="#GDB签名" class="headerlink" title="GDB签名"></a>GDB签名</h3><h4 id="运行Keychain-Access"><a href="#运行Keychain-Access" class="headerlink" title="运行Keychain Access"></a>运行Keychain Access</h4><p>Launchpad 中搜索 Keychain Access 并打开。</p>
+<h4 id="新建证书"><a href="#新建证书" class="headerlink" title="新建证书"></a>新建证书</h4><ol>
+<li>菜单栏 =&gt; Certificate Assistant =&gt; Create a Certificate …</li>
+<li>Name:gdbcert</li>
+<li>Id type:self signed root</li>
+<li>Cert Type:Code Signing</li>
+<li>勾选 Let me override…</li>
+<li>Continue</li>
+<li>SN :1</li>
+<li>VP:3650</li>
+<li>连续7下Continue</li>
+<li>Keychain:System</li>
+<li>Create</li>
+<li>输入密码</li>
+<li>Done</li>
+</ol>
+<h4 id="信任证书"><a href="#信任证书" class="headerlink" title="信任证书"></a>信任证书</h4><ol>
+<li>Keychain Access左列表Keychains中找到System并点击</li>
+<li>找到gdbcert(证书)后双击弹出证书介绍框</li>
+<li>打开Trust下拉列表，看到When using this certificate，改为Always Trust</li>
+<li>退出并输入密码</li>
+</ol>
+<h4 id="签证"><a href="#签证" class="headerlink" title="签证"></a>签证</h4><ol>
+<li>打开Terminal执行：<code>codesign -s gdbcert /usr/local/bin/gdb</code></li>
+<li>打开Launchpad搜索Activity Monitor，如果存在taskgated进程则关闭它。</li>
+</ol>
+<h2 id="新建项目HelloWorld"><a href="#新建项目HelloWorld" class="headerlink" title="新建项目HelloWorld"></a>新建项目HelloWorld</h2><ol>
+<li>打开Finder或者Terminal在任意目录下创建HelloWorld空文件夹</li>
+<li>打开VSC:</li>
+<li>新建空文件 =&gt; <code>HelloWorld\HelloWorld.cpp</code></li>
+<li>新建空<strong>目录</strong> =&gt; <code>HelloWorld\.vscode</code></li>
+<li>新建空文件 =&gt; <code>HelloWorld\.vscode\launch.json</code></li>
+<li>新建空文件 =&gt; <code>HelloWorld\.vscode\tasks.json</code></li>
+</ol>
+<p>修改<code>HelloWorld.cpp</code></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World."</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>修改<code>launch.json</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.2.0"</span>,</div><div class="line">    <span class="attr">"configurations"</span>: [</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"name"</span>: <span class="string">"C++ Launch (GDB)"</span>,</div><div class="line">            <span class="attr">"type"</span>: <span class="string">"cppdbg"</span>,</div><div class="line">            <span class="attr">"request"</span>: <span class="string">"launch"</span>,</div><div class="line">            <span class="attr">"launchOptionType"</span>: <span class="string">"Local"</span>,</div><div class="line">            <span class="attr">"targetArchitecture"</span>: <span class="string">"x64"</span>,</div><div class="line">            <span class="attr">"program"</span>: <span class="string">"$&#123;file&#125;.out"</span>,</div><div class="line">            <span class="attr">"args"</span>: [],</div><div class="line">            <span class="attr">"stopAtEntry"</span>: <span class="literal">false</span>,</div><div class="line">            <span class="attr">"cwd"</span>: <span class="string">"$&#123;workspaceRoot&#125;"</span>,</div><div class="line">            <span class="attr">"environment"</span>: [],</div><div class="line">            <span class="attr">"externalConsole"</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">"preLaunchTask"</span>: <span class="string">"g++"</span>,</div><div class="line">            <span class="attr">"miDebuggerPath"</span>: <span class="string">"/usr/local/bin/gdb"</span></div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>修改<code>tasks.json</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"g++"</span>,</div><div class="line">    <span class="attr">"args"</span>: [<span class="string">"-g"</span>,<span class="string">"$&#123;file&#125;"</span>,<span class="string">"-o"</span>,<span class="string">"$&#123;file&#125;.out"</span>],</div><div class="line">    <span class="attr">"problemMatcher"</span>: &#123;</div><div class="line">        <span class="attr">"owner"</span>: <span class="string">"cpp"</span>,</div><div class="line">        <span class="attr">"fileLocation"</span>: [<span class="string">"relative"</span>, <span class="string">"$&#123;workspaceRoot&#125;"</span>],</div><div class="line">        <span class="attr">"pattern"</span>: &#123;</div><div class="line">            <span class="attr">"regexp"</span>: <span class="string">"^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$"</span>,</div><div class="line">            <span class="attr">"file"</span>: <span class="number">1</span>,</div><div class="line">            <span class="attr">"line"</span>: <span class="number">2</span>,</div><div class="line">            <span class="attr">"column"</span>: <span class="number">3</span>,</div><div class="line">            <span class="attr">"severity"</span>: <span class="number">4</span>,</div><div class="line">            <span class="attr">"message"</span>: <span class="number">5</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/VSCode/" rel="tag">#VSCode</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/20/UIFrame/" rel="next" title="简单的界面库">
+                <i class="fa fa-chevron-left"></i> 简单的界面库
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/30/qq/" rel="prev" title="将QQ下线">
+                将QQ下线 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Ryan" />
+          <p class="site-author-name" itemprop="name">Ryan</p>
+          <p class="site-description motion-element" itemprop="description">Bonjour,coder</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装VSCode"><span class="nav-number">1.</span> <span class="nav-text">安装VSCode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装VSC扩展-cpptools"><span class="nav-number">2.</span> <span class="nav-text">安装VSC扩展 cpptools</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装GDB"><span class="nav-number">3.</span> <span class="nav-text">安装GDB</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装xcode"><span class="nav-number">3.1.</span> <span class="nav-text">安装xcode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启vpn"><span class="nav-number">3.2.</span> <span class="nav-text">开启vpn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装homebrew"><span class="nav-number">3.3.</span> <span class="nav-text">安装homebrew</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更换homebrew源"><span class="nav-number">3.4.</span> <span class="nav-text">更换homebrew源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装GDB-1"><span class="nav-number">3.5.</span> <span class="nav-text">安装GDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GDB签名"><span class="nav-number">3.6.</span> <span class="nav-text">GDB签名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#运行Keychain-Access"><span class="nav-number">3.6.1.</span> <span class="nav-text">运行Keychain Access</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建证书"><span class="nav-number">3.6.2.</span> <span class="nav-text">新建证书</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#信任证书"><span class="nav-number">3.6.3.</span> <span class="nav-text">信任证书</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#签证"><span class="nav-number">3.6.4.</span> <span class="nav-text">签证</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建项目HelloWorld"><span class="nav-number">4.</span> <span class="nav-text">新建项目HelloWorld</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
